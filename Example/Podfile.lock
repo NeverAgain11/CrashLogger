@@ -1,0 +1,16 @@
+PODS:
+  - CrashLogger (0.1.0)
+
+DEPENDENCIES:
+  - CrashLogger (from `../`)
+
+EXTERNAL SOURCES:
+  CrashLogger:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CrashLogger: 53d2186ec0a1104fbe0c837f4203ea892a00426c
+
+PODFILE CHECKSUM: 488e5a18214ed795c55bb746aa3b2d52e037dca7
+
+COCOAPODS: 1.10.2

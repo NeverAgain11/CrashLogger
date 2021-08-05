@@ -7,6 +7,8 @@
 //
 
 #import "STViewController.h"
+#import <CrashLogger/STCrashManager.h>
+
 
 @interface STViewController ()
 
@@ -18,6 +20,20 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [STCrashManager regiterHandle];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    [STCrashManager openPluginFrom:self];
+    
+//    NSArray *a = @[];
+//
+//    NSString *asd = a[0];
+//
+//    NSLog(asd);
 }
 
 - (void)didReceiveMemoryWarning
